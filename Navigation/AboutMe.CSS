@@ -1,0 +1,56 @@
+
+h1{
+color: cadetblue;
+}
+
+h2{
+    color: cadetblue;
+    margin-top:30px;
+
+    }
+
+#trim {
+    margin-top:60px;
+    color: white;
+}
+
+p {
+    color: white;
+}
+
+html {
+    background-color: rgba(90, 86, 71, 1.0);
+  }
+  
+  strong{
+      color: yellow;
+  }
+
+  ul{
+      color: white;
+  }
+
+  ol{
+    color: white;
+}
+
+a{
+    color: red;
+}
+
+.floatleft
+{
+    float: left;
+}
+ 
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .imgset
+  {
+      width:400px;
+      height:300px;
+  }

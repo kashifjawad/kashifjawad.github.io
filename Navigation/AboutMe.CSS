@@ -1,11 +1,15 @@
 
 h1{
 color: cadetblue;
+font-family: 'Courier New', Courier, monospace;
+font-size: 32pt;
+
 }
 
 h2{
     color: cadetblue;
     margin-top:30px;
+    font-family: 'Courier New', Courier, monospace;
 
     }
 
@@ -32,6 +36,7 @@ html {
 
   ol{
     color: white;
+    list-style: ;
 }
 
 a{
@@ -53,4 +58,12 @@ a{
   {
       width:400px;
       height:300px;
+  }
+  #yellow{
+      color: yellow;
+      list-style: none;
+  }
+  #innerPara{
+      color: white;
+      list-style: none;
   }

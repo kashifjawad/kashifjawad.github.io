@@ -1,0 +1,80 @@
+
+.headerDiv{
+    background-color: rgb(170, 202,180);
+    height: 50px;
+    padding-top: 2px;
+
+}
+
+.inputClass{
+    margin-left: 40px;
+}
+
+form{
+    width: 100%;
+    
+}
+label{
+  display: inline-block;
+  width: 300px;
+}
+
+
+
+
+  
+  .row{
+    width: 100%;
+  }
+  
+  .column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+   .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } 
+
+  .row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 50%;
+  }
+  
+  .footerClass{
+    background-color:rgb(227, 227,227);
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-top: 30px;
+    
+  }
+  
+  .bottomDiv input{
+    background-color: rgb(132, 167,152);
+    width: 100px;
+    color: white;
+  }
+ 
+  .lunch{
+    top: -40px;
+    position: relative;
+  }
+
+  .CheckBoxClass{
+    vertical-align: middle;
+  }
+
+  #wgtmsr{
+      width:150px;   
+      height: 100px;
+    
+  }

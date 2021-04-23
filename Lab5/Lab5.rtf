@@ -1,0 +1,80 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2578
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue255;\red255\green255\blue254;\red0\green0\blue0;
+\red19\green120\blue72;\red144\green1\blue18;\red14\green110\blue109;}
+{\*\expandedcolortbl;;\cssrgb\c0\c0\c100000;\cssrgb\c100000\c100000\c99608;\cssrgb\c0\c0\c0;
+\cssrgb\c3529\c53333\c35294;\cssrgb\c63922\c8235\c8235;\cssrgb\c0\c50196\c50196;}
+\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 Question Number1;\
+\
+\pard\pardeftab720\sl420\partightenfactor0
+
+\f1\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 let\cf4 \strokec4  arr = [\cf5 \strokec5 1\cf4 \strokec4 ,\cf5 \strokec5 50\cf4 \strokec4 ,\cf5 \strokec5 40\cf4 \strokec4 ,\cf5 \strokec5 3\cf4 \strokec4 ,\cf5 \strokec5 10\cf4 \strokec4 ];\cb1 \
+\cf2 \cb3 \strokec2 let\cf4 \strokec4  result  = arr.filter(num=>num>\cf5 \strokec5 20\cf4 \strokec4 )\cb1 \
+\pard\pardeftab720\sl420\partightenfactor0
+\cf4 \cb3 .reduce((sum,current,index,arr)=>sum + current);\cb1 \
+\cb3 console.log(result);\cb1 \
+\
+\
+\
+Question Number 2:\
+\
+\pard\pardeftab720\sl420\partightenfactor0
+\cf2 \cb3 \strokec2 let\cf4 \strokec4  arrofString = [\cf6 \strokec6 "holy"\cf4 \strokec4 ,\cf6 \strokec6 "shit"\cf4 \strokec4 ,\cf6 \strokec6 "match"\cf4 \strokec4 ,\cf6 \strokec6 "worst"\cf4 \strokec4 ,\cf6 \strokec6 "besteeeer"\cf4 \strokec4 ,\cf6 \strokec6 "cooper"\cf4 \strokec4 ,\cf6 \strokec6 "darkSide"\cf4 \strokec4 ];\cb1 \
+\
+\cf2 \cb3 \strokec2 let\cf4 \strokec4  result2  = arrofString.filter(x=>x.length>=\cf5 \strokec5 5\cf4 \strokec4  && (x.includes(\cf6 \strokec6 "a"\cf4 \strokec4 ) || x.includes(\cf6 \strokec6 "A"\cf4 \strokec4 ) ));\cb1 \
+\
+\cb3 console.log(result2);\cb1 \
+\pard\pardeftab720\sl420\partightenfactor0
+\cf4 \
+\
+Q3:\
+\
+\pard\pardeftab720\sl420\partightenfactor0
+\cf2 \cb3 \strokec2 function\cf4 \strokec4  \cf7 \strokec7 Employee\cf4 \strokec4 (firstname, lastname,birthDay)\{ \cb1 \
+\cb3   \cf2 \strokec2 this\cf4 \strokec4 .firstname = firstname;\cb1 \
+\cb3   \cf2 \strokec2 this\cf4 \strokec4 .lastname = lastname; \cb1 \
+\cb3   \cf2 \strokec2 this\cf4 \strokec4 .birthDay = birthDay; \cb1 \
+\
+\cb3   \cf2 \strokec2 this\cf4 \strokec4 .getFullName = \cf2 \strokec2 function\cf4 \strokec4 ()\{\cb1 \
+\cb3      \cf2 \strokec2 return\cf4 \strokec4  \cf2 \strokec2 this\cf4 \strokec4 .firstname + \cf6 \strokec6 ' '\cf4 \strokec4  + \cf2 \strokec2 this\cf4 \strokec4 .lastname;\cb1 \
+\cb3     \}\cb1 \
+\
+\cb3   \cf2 \strokec2 this\cf4 \strokec4 .getAge = \cf2 \strokec2 function\cf4 \strokec4 ()\{\cb1 \
+\
+\cb3      \cf2 \strokec2 var\cf4 \strokec4  diff_ms = \cf7 \strokec7 Date\cf4 \strokec4 .now() - \cf2 \strokec2 this\cf4 \strokec4 .birthDay.getTime();\cb1 \
+\cb3     \cf2 \strokec2 var\cf4 \strokec4  age_dt = \cf2 \strokec2 new\cf4 \strokec4  \cf7 \strokec7 Date\cf4 \strokec4 (diff_ms); \cb1 \
+\cb3   \cb1 \
+\cb3     \cf2 \strokec2 return\cf4 \strokec4  \cf7 \strokec7 Math\cf4 \strokec4 .abs(age_dt.getUTCFullYear() - \cf5 \strokec5 1970\cf4 \strokec4 );\cb1 \
+\cb3     \}\cb1 \
+\cb3 \}\cb1 \
+\cf2 \cb3 \strokec2 const\cf4 \strokec4  emp1 = \cf2 \strokec2 new\cf4 \strokec4  \cf7 \strokec7 Employee\cf4 \strokec4 (\cf6 \strokec6 "Muniba"\cf4 \strokec4 ,\cf6 \strokec6 "Kayani"\cf4 \strokec4 ,\cf2 \strokec2 new\cf4 \strokec4  \cf7 \strokec7 Date\cf4 \strokec4 (\cf5 \strokec5 1993\cf4 \strokec4 , \cf5 \strokec5 5\cf4 \strokec4 , \cf5 \strokec5 2\cf4 \strokec4 ));\cb1 \
+\
+\
+\cf2 \cb3 \strokec2 const\cf4 \strokec4  emp2 = \cf2 \strokec2 new\cf4 \strokec4  \cf7 \strokec7 Employee\cf4 \strokec4 (\cf6 \strokec6 "kashif"\cf4 \strokec4 ,\cf6 \strokec6 "jawad"\cf4 \strokec4 ,\cf2 \strokec2 new\cf4 \strokec4  \cf7 \strokec7 Date\cf4 \strokec4 (\cf5 \strokec5 2002\cf4 \strokec4 , \cf5 \strokec5 4\cf4 \strokec4 , \cf5 \strokec5 3\cf4 \strokec4 ));\cb1 \
+\
+\cf2 \cb3 \strokec2 const\cf4 \strokec4  emp3 = \cf2 \strokec2 new\cf4 \strokec4  \cf7 \strokec7 Employee\cf4 \strokec4 (\cf6 \strokec6 "Johan"\cf4 \strokec4 ,\cf6 \strokec6 "Santiago"\cf4 \strokec4 ,\cf2 \strokec2 new\cf4 \strokec4  \cf7 \strokec7 Date\cf4 \strokec4 (\cf5 \strokec5 2005\cf4 \strokec4 , \cf5 \strokec5 5\cf4 \strokec4 , \cf5 \strokec5 2\cf4 \strokec4 ));\cb1 \
+\
+\cf2 \cb3 \strokec2 const\cf4 \strokec4  emp4 = \cf2 \strokec2 new\cf4 \strokec4  \cf7 \strokec7 Employee\cf4 \strokec4 (\cf6 \strokec6 "Ambasa"\cf4 \strokec4 ,\cf6 \strokec6 "Yo"\cf4 \strokec4 ,\cf2 \strokec2 new\cf4 \strokec4  \cf7 \strokec7 Date\cf4 \strokec4 (\cf5 \strokec5 2006\cf4 \strokec4 , \cf5 \strokec5 5\cf4 \strokec4 , \cf5 \strokec5 2\cf4 \strokec4 ));\cb1 \
+\
+\cf2 \cb3 \strokec2 const\cf4 \strokec4  emp5 = \cf2 \strokec2 new\cf4 \strokec4  \cf7 \strokec7 Employee\cf4 \strokec4 (\cf6 \strokec6 "yaya"\cf4 \strokec4 ,\cf6 \strokec6 "Saiku"\cf4 \strokec4 ,\cf2 \strokec2 new\cf4 \strokec4  \cf7 \strokec7 Date\cf4 \strokec4 (\cf5 \strokec5 1992\cf4 \strokec4 , \cf5 \strokec5 5\cf4 \strokec4 , \cf5 \strokec5 2\cf4 \strokec4 ));\cb1 \
+\
+\cf2 \cb3 \strokec2 let\cf4 \strokec4  arrayOfEmp = [emp1,emp2,emp3,emp4,emp5];\cb1 \
+\
+\cb3 console.log(\cf6 \strokec6 "===========Employeewith Age more than 20============="\cf4 \strokec4 );\cb1 \
+\cf2 \cb3 \strokec2 let\cf4 \strokec4  ageMore20 = arrayOfEmp.filter(x=>x.getAge()>\cf5 \strokec5 20\cf4 \strokec4 );\cb1 \
+\cb3 console.log(ageMore20);\cb1 \
+\
+\cf2 \cb3 \strokec2 let\cf4 \strokec4  employeeBornAfter20 = arrayOfEmp.filter(x=>x.birthDay.getFullYear() > \cf5 \strokec5 2000\cf4 \strokec4 )\cb1 \
+\cb3 .map(x=>x.getFullName());\cb1 \
+\cb3 console.log(\cf6 \strokec6 "===========Employee with birth year after 2000============="\cf4 \strokec4 );\cb1 \
+\cb3 console.log(employeeBornAfter20);\cb1 \
+\pard\pardeftab720\sl420\partightenfactor0
+\cf4 \
+\
+\
+\
+}

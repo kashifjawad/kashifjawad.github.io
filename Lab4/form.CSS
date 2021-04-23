@@ -20,9 +20,6 @@ label{
 }
 
 
-
-
-  
   .row{
     width: 100%;
   }
@@ -75,6 +72,21 @@ label{
 
   #wgtmsr{
       width:150px;   
-      height: 100px;
     
+  }
+  .item{
+       position: relative;
+    
+       /* background-color: red; */
+  }
+
+ 
+  
+  @media screen and (max-width: 300px) {
+     #one { 
+      float: none;
+      margin-right:0;
+      width:auto;
+      border:0;
+    }
   }

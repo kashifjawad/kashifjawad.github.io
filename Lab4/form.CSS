@@ -80,7 +80,15 @@ label{
        /* background-color: red; */
   }
 
+
  
+  #topmenu li {
+     display: inline;
+     border: 2px solid gray; 
+     margin-right: 1em; 
+     list-style-type: none;
+    }
+
   
   @media screen and (max-width: 300px) {
      #one { 

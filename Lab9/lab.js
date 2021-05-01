@@ -36,18 +36,22 @@ function Clock({ template }) {
 
   //1-stop time after 10 seconds
   // setTimeout(function( ) { clearInterval( timer ); }, 10000);
-    //2-start(),stop(),render() are inner functions
+    //2-render() are inner functions
   // 3- local variable of constructor function?       
   //Answer: timer
   //4-what is the clock interface returned by the constructor function?
   //Answer: The this  reference of Clock object
-  //5-closures are block of code.
+  //5-closures are block of code. 
   //Answer: closure are block of code that store information of methods that are being
-  // returned or pass as parameter.
+  // returned or pass as parameter .no closure here.
   //6-private variables and methods are used for encapsulation of code
+  //timer,render
   //you can acheive private in java script through inner function
   //7-java script is public by default that allow users to use its method openly
+  //stop,start
   //8-behind seen java class is same as function interface
+
+
 
 
 

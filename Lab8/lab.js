@@ -168,10 +168,8 @@ let LinkedList = {
                     
         var deleted = false;
                           
-        /* Are we deleting the first node? */
         if (data == currentNode.data) {
             
-          /* Only one node in list, be careful! */
             if (currentNode.next == null) {
               this.firstNode.data = null;
               this.firstNode = null;
@@ -190,18 +188,15 @@ let LinkedList = {
           
         while (true) {
           
-            /* If end of list, stop */
             if (currentNode == null) {
               deleted = false;
                 break;
             }
 
-            /* Check if the data of the next is what we're looking for */
             var nextNode = currentNode.next;
             if (nextNode != null) {
                 if (data == nextNode.data) {
                     
-                    /* Found the right one, loop around the node */
                     var nextNextNode = nextNode.next;
                     currentNode.next = nextNextNode;
                     
@@ -295,10 +290,8 @@ this.remove = function(data) {
           
         var wasDeleted = false;
                           
-        //  fist Node deleted 
         if (data == currentNode.data) {
             
-        //    Only one node in list 
             if (currentNode.next == null) {
               this.firstNode.data = null;
               this.firstNode = null;
@@ -315,18 +308,15 @@ this.remove = function(data) {
         }
           
         while (true) {
-            // If end of list, stop 
             if (currentNode == null) {
               wasDeleted = false;
                 break;
             }
 
-            /* Check if the data of the next is what we're looking for */
             var nextNode = currentNode.next;
             if (nextNode != null) {
                 if (data == nextNode.data) {
                     
-                    /* Found the right one, loop around the node */
                     var nextNextNode = nextNode.next;
                     currentNode.next = nextNextNode;
                     

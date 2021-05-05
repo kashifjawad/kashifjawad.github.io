@@ -69,7 +69,7 @@ class Node{
     this._data = data;
   }
  
-  set setNext(next){
+  set setNext(next){ 
     this._next = next;
   }
 

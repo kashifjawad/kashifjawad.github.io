@@ -1,0 +1,6 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ApachiTom">
+    <output-path>$PROJECT_DIR$/out/artifacts/ApachiTom</output-path>
+    <root id="archive" name="ApachiTom.war" />
+  </artifact>
+</component>

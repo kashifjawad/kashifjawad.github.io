@@ -8,12 +8,7 @@ public class QuizJava {
     String question;
     String answer;
     static List<QuizJava> list = new ArrayList<QuizJava>();
-    static String questions[]  = {
-            "3, 1, 4, 1, 5",
-            "1, 1, 2, 3, 5",
-            "1, 4, 9, 16, 25",
-            "2, 3, 5, 7, 11",
-            "1, 2, 4, 8, 16"
+    static String questions[]  = {"3, 1, 4, 1, 5", "1, 1, 2, 3, 5", "1, 4, 9, 16, 25", "2, 3, 5, 7, 11", "1, 2, 4, 8, 16"
     };
 
     static String answers[] = {"9", "8","36","13","32"};
@@ -31,14 +26,14 @@ public class QuizJava {
         return question;
     }
 
-    public static List<QuizJava> generateQuestion(){
+    public static List<QuizJava> addQuestions(){
         for (int i = 0; i < questions.length; i++){
             list.add(new QuizJava(questions[i], answers[i]));
         }
         return list;
     }
 
-    public boolean checkAnswer(String answer){
+    public boolean isAnwerCorrect(String answer){
         return this.answer.equals(answer);
     }
 

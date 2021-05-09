@@ -3,6 +3,7 @@ package Quiz;
 import javax.servlet.*;
 import javax.servlet.http.*;
 import javax.servlet.annotation.*;
+import java.io.Console;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -25,8 +26,10 @@ public class Quiz extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
+
+        System.out.print(request.getParameter("response"));
         if(count > 0)
-            if(list.get(count - 1).isAnwerCorrect(request.getParameter("response"))){
+            if(list.get(count-1).isAnwerCorrect(request.getParameter("response"))){
                 score++;
             }
 

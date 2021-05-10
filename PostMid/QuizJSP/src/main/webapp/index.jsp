@@ -35,8 +35,6 @@
     <input type = "submit" value = "Submit" />
 </form>
 
-<%--<a href="hello-servlet">Hello Servlet</a>--%>
 </body>
 </html>
 
-<%--out.println("\t<p>You have completed the Number Quiz, with a score of " + score + " out of 5. </p>\n");--%>

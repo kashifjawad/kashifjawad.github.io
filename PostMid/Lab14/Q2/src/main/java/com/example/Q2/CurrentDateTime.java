@@ -1,4 +1,4 @@
-package com.example;
+package com.example.Q2;
 
 import javax.servlet.jsp.JspException;
 import javax.servlet.jsp.JspWriter;
@@ -28,17 +28,12 @@ public class CurrentDateTime extends SimpleTagSupport {
         }
     }
 
-//    public String getColor() {
-//        return color;
-//    }
 
     public void setColor(String color) {
         this.color = color;
     }
 
-//    public String getSize() {
-//        return size;
-//    }
+
 
     public void setSize(String size) {
         this.size = size;

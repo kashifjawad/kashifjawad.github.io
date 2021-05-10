@@ -6,7 +6,7 @@
 
     <welcome-file-list>
         <welcome-file>
-            showCurrentDate
+            showCurrDate.jsp
         </welcome-file>
     </welcome-file-list>
 </web-app>

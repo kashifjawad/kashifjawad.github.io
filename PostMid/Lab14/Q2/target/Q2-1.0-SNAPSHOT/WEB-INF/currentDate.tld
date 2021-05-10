@@ -13,7 +13,7 @@
     <tag>
         <description>Generates a label</description>
         <name>currentDateTime</name>
-        <tag-class>com.example.CurrentDateTime</tag-class>
+        <tag-class>com.example.Q2.CurrentDateTime</tag-class>
         <body-content>empty</body-content>
         <attribute>
             <name>color</name>

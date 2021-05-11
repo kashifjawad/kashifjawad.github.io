@@ -42,12 +42,12 @@ public class QuizServlet extends HttpServlet {
             }
         }
 
-        System.out.print(list.get(QuizJava.count).getQuestion());
+//        System.out.print(list.get(QuizJava.count).getQuestion());
 
 
         request.setAttribute("score", QuizJava.score);
         request.setAttribute("count", QuizJava.count);
-        request.setAttribute("question", list.get(QuizJava.count).getQuestion());
+        request.setAttribute("question", list.get(QuizJava.count).question);
         RequestDispatcher rd = request.getRequestDispatcher("index.jsp");
         rd.forward(request,response);
 

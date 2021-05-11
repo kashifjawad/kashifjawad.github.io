@@ -10,7 +10,7 @@ public class QuizJava {
     public static int count = 0;
     public static int score = 0;
 
-    static List<QuizJava> list = new ArrayList<QuizJava>();
+    static List<QuizJava> list = new ArrayList<>();
     static String questions[]  = {"3, 1, 4, 1, 5",
             "1, 1, 2, 3, 5",
             "1, 4, 9, 16, 25",
